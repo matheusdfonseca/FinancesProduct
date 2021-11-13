@@ -1,0 +1,26 @@
+### Spring Configuration###
+spring:
+  application:
+    name: Product
+  messages:
+    encoding: UTF-8
+  jpa:
+    open-in-view: false
+    properties:
+      hibernate:
+        default_schema: finances_dev
+
+info:
+  app:
+    name: Product
+    description: Serviço responsável pelo gerenciamento dos produtos
+    env: ${spring.profiles.active}
+    version: ${GITVERSION}
+
+### DataBase Configuration
+database:
+  username: finances_dev
+  password: 123456
+  host: localhost
+  port: 5432
+  dbname: finances_dev
