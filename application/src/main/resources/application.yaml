@@ -9,7 +9,6 @@ spring:
     properties:
       hibernate:
         default_schema: finances_dev
-
 info:
   app:
     name: Product
@@ -24,3 +23,8 @@ database:
   host: localhost
   port: 5432
   dbname: finances_dev
+
+### Swagger
+swagger:
+  base:
+    ref: /product

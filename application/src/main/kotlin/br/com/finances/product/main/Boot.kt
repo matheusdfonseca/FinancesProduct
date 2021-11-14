@@ -6,7 +6,7 @@ import org.springframework.context.annotation.ComponentScan
 import java.util.TimeZone
 
 @SpringBootApplication
-@ComponentScan("br.com.finances")
+@ComponentScan("br.com.finances.product")
 class Boot {
     companion object {
         @JvmStatic
